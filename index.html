@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>心意</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">双人轻量记录</p>
+          <h1 class="app-title" id="page-title">首页</h1>
+        </div>
+        <button class="ghost-btn" id="header-action" hidden>记录这次心动</button>
+      </header>
+
+      <main class="screen" id="screen"></main>
+
+      <nav class="tabbar">
+        <button class="tabbar-item active" data-route="home">首页</button>
+        <button class="tabbar-item" data-route="moment">心动</button>
+        <button class="tabbar-item" data-route="redeem">兑换</button>
+        <button class="tabbar-item" data-route="kiss">吻</button>
+        <button class="tabbar-item" data-route="messages">消息</button>
+      </nav>
+    </div>
+
+    <div class="modal-layer hidden" id="modal-layer"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
